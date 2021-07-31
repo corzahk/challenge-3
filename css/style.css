@@ -9,7 +9,6 @@
 body {
   background-color: #181719;
   color: white;
-  min-height: 100%;
 }
 
 .nav__main {
@@ -62,16 +61,16 @@ ul.show {
   display: none;
 }
 
-  .item-title {
-    border-style: solid;
-    border-width: 2px;
-    padding: 8px;
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: 200;
-    font-family: "Crimson Pro", serif;
-    margin-left: 60px;
-  }
+.item-title {
+  border-style: solid;
+  border-width: 2px;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Crimson Pro", serif;
+  margin-left: 60px;
+}
 .main-page {
   display: flex;
   flex-direction: row;
@@ -79,6 +78,8 @@ ul.show {
   justify-content: center;
   align-items: center;
   margin: 100px;
+  min-height: 100vh;
+  position: relative;
 }
 
 .container-img {
@@ -96,7 +97,7 @@ ul.show {
   border-radius: 50%;
 }
 
-.container-information{
+.container-information {
   margin-right: 80px;
 }
 .container-information h1 {
@@ -154,7 +155,6 @@ img {
     "d d";
 }
 
-
 .desing {
   grid-area: d;
   font-size: 18px;
@@ -175,14 +175,16 @@ img {
   .img-container {
     width: 700px;
   }
-  
 }
 
 @media screen and (max-width: 858px) {
-  
   .main-page {
     flex-direction: column;
     margin: 0;
+  }
+  footer {
+    margin-top: 20px;
+    text-align: center;
   }
   .img-container {
     width: 100%;
@@ -221,7 +223,7 @@ img {
   .nav_items li a:hover {
     color: #e9183b;
   }
-  .item-title{
+  .item-title {
     margin-left: 10px;
   }
 }
