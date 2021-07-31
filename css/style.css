@@ -93,6 +93,7 @@ ul.show {
   width: 62.2px;
   height: 52.68px;
   padding: 0 10px;
+  margin-top: 10px;
 }
 .img-container-black img {
   border-radius: 50%;
@@ -119,6 +120,9 @@ ul.show {
   font-weight: 700;
   font-size: 14px;
 }
+.name-personal {
+  justify-self: flex-start;
+}
 span {
   display: inline-block;
   width: 17px;
@@ -138,10 +142,11 @@ img {
 
   right: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  place-items: center;
 
   display: grid;
   grid-template-columns: auto 200px;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   gap: 6px 0px;
   grid-template-areas:
     ". ."
@@ -162,8 +167,8 @@ footer p {
   grid-area: d;
   font-size: 18px;
   width: 220px;
-  margin: 21px 2px 21px 19px;
-  height: 45px;
+  align-self: flex-start;
+  margin-bottom: 2px;
 }
 
 @media screen and (max-width: 952px) {
