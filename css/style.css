@@ -62,16 +62,16 @@ ul.show {
   display: none;
 }
 
-.item-title {
-  border-style: solid;
-  border-width: 2px;
-  padding: 8px;
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 200;
-  font-family: "Crimson Pro", serif;
-  margin-left: 10px;
-}
+  .item-title {
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Crimson Pro", serif;
+    margin-left: 60px;
+  }
 .main-page {
   display: flex;
   flex-direction: row;
@@ -175,9 +175,11 @@ img {
   .img-container {
     width: 700px;
   }
+  
 }
 
 @media screen and (max-width: 858px) {
+  
   .main-page {
     flex-direction: column;
     margin: 0;
@@ -218,5 +220,8 @@ img {
   }
   .nav_items li a:hover {
     color: #e9183b;
+  }
+  .item-title{
+    margin-left: 10px;
   }
 }
