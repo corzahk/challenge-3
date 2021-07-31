@@ -167,6 +167,13 @@ img {
 
   padding-right: 20px;
 }
+.nav-items li a:hover {
+  border-bottom:1px solid white ;
+  display: inline-block;
+}
+footer{
+  text-align: center;
+}
 
 @media screen and (max-width: 952px) {
   .nav-items li a {
@@ -184,7 +191,7 @@ img {
   }
   footer {
     margin-top: 35px;
-    text-align: center;
+    
   }
   .img-container {
     width: 100%;
@@ -201,28 +208,31 @@ img {
   .nav-items {
     position: absolute;
     width: 100%;
-    height: calc(100% - 35px);
+    height: calc(100% - 30px);
     background: #181719;
     top: -100%;
     text-align: center;
     transition: all 0.4s;
     flex-direction: column;
+    justify-content: center;
   }
-  .nav_items li {
+  .nav-items li {
     margin: 30px 0 0 0;
     line-height: 30px;
   }
-  .nav_items li:hover {
+  .nav-items li:hover {
     background: none;
+    
+    
   }
-  .nav_items li a {
+  .nav-items li a {
     font-size: 20px;
     color: white;
     font-weight: bold;
+   
   }
-  .nav_items li a:hover {
-    color: #e9183b;
-  }
+  
+ 
   .item-title {
     margin-left: 10px;
   }
