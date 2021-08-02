@@ -57,6 +57,9 @@ li.active {
 ul.show {
   top: 65px;
 }
+.visi {
+  visibility: hidden;
+}
 .backg {
   display: none;
 }
@@ -77,9 +80,11 @@ ul.show {
   align-content: center;
   justify-content: center;
   align-items: center;
-  
+
   min-height: 85vh;
-  
+}
+.space {
+  padding-left: 5px;
 }
 
 .container-img {
@@ -125,6 +130,17 @@ ul.show {
 .name-personal {
   justify-self: flex-start;
 }
+.name-personal p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.interior {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: #828282;
+}
 span {
   display: inline-block;
   width: 17px;
@@ -149,18 +165,19 @@ img {
   display: grid;
   grid-template-columns: auto 200px;
   grid-template-rows: auto;
-  gap: 6px 0px;
+
   grid-template-areas:
     ". ."
     "d d";
 }
 
-.desing {
+.design {
   grid-area: d;
   font-size: 18px;
   width: 220px;
   align-self: flex-start;
-  margin-bottom: 2px;
+  bottom: 2px;
+  position: relative;
 }
 .img-container {
   width: 600px;
@@ -168,10 +185,10 @@ img {
   padding-right: 20px;
 }
 .nav-items li a:hover {
-  border-bottom:1px solid white ;
+  border-bottom: 1px solid white;
   display: inline-block;
 }
-footer{
+footer {
   text-align: center;
 }
 
@@ -191,7 +208,6 @@ footer{
   }
   footer {
     margin-top: 35px;
-    
   }
   .img-container {
     width: 100%;
@@ -222,17 +238,13 @@ footer{
   }
   .nav-items li:hover {
     background: none;
-    
-    
   }
   .nav-items li a {
     font-size: 20px;
     color: white;
     font-weight: bold;
-   
   }
-  
- 
+
   .item-title {
     margin-left: 10px;
   }
